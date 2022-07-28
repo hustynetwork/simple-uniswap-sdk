@@ -1931,9 +1931,7 @@ export class UniswapRouterFactory {
         : this._fromToken.decimals;
 
     if (
-      tradeDirection === TradeDirection.output &&
-      uniswapVersion === UniswapVersion.v3
-    ) {
+      tradeDirection === TradeDirection.output) {
       return new BigNumber(expectedConvertQuote)
         .plus(
           new BigNumber(expectedConvertQuote)
